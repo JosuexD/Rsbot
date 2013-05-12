@@ -32,9 +32,9 @@ public class Ports extends ActiveScript {
 
 	@Override
 	public void onStart() {
-		provide(new gettingbeer());
-		provide(new beerserving());
-		provide(new findingasssin());
+		provide(new GettingBeer());
+		provide(new BeerServing());
+		provide(new FindingAssasin());
 		// provide(new Walking2Bank());
 		// provide(new Banking());
 		log.info("All jobs provided");
@@ -64,7 +64,7 @@ public class Ports extends ActiveScript {
 				.size()]));
 	}
 
-	public class gettingbeer extends Node {
+	public class GettingBeer extends Node {
 
 		@Override
 		public boolean activate() {
@@ -94,7 +94,7 @@ public class Ports extends ActiveScript {
 
 	}
 
-	public class beerserving extends Node {
+	public class BeerServing extends Node {
 
 		@Override
 		public boolean activate() {
@@ -130,7 +130,7 @@ public class Ports extends ActiveScript {
 
 	}
 
-	public class findingasssin extends Node {
+	public class FindingAssasin extends Node {
 
 		@Override
 		public boolean activate() {
