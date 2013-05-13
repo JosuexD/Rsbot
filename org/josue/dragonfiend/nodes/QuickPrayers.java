@@ -30,9 +30,6 @@ public class QuickPrayers extends Node {
             System.out.println("Quickprayer Node");
             Prayer.toggleQuick(true);
             Task.sleep(1000);
-        } else {
-            Prayer.toggleQuick(true);
-            Task.sleep(1000);
         }
     }
 }

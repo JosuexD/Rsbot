@@ -26,6 +26,7 @@ public class Banker extends Node {
 
     @Override
     public void execute() {
+        //WILL REDO THIS METHODS FOR MORE EFFICIENCY
         System.out.println("Banking Node");
         if ((!Bank.isOpen() && (Inventory.isFull() || Inventory.getCount() != 8))) {
             System.out.println("Opening Bank");

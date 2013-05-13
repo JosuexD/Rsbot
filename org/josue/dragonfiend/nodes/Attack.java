@@ -42,7 +42,7 @@ public class Attack extends Node {
                 Camera.turnTo(AGGRESSIVE);
                 Task.sleep(700, 1500);
             }
-        } else if (AGGRESSIVE == null && DRAGON != null && !DRAGON.isInCombat() && DRAGON.getInteracting() == null) {
+        } else if (DRAGON != null && !DRAGON.isInCombat() && DRAGON.getInteracting() == null) {
             if (Methods.isOnScreen(DRAGON)) {
                 System.out.println("Attacking idle DRAGON");
                 DRAGON.interact("Attack");
